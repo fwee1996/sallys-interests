@@ -1,0 +1,86 @@
+ <!-- Book 2 - Martin's Aquarium-Column 1 Chapter 1-Project Setup in GitBash Terminal
+cd ~/workspace
+mkdir sallys-interests
+
+cd sallys-interests
+
+git init //command to make a git repository for tracking your progress 
+
+touch index.html //make html file
+
+//create styles sub-directory called "main.css" in Gitbash:
+mkdir styles
+touch styles/main.css
+
+git add --all 
+git commit -m "First commit" 
+
+Go to Github:
++ >"New repository">"Repository name" : sallys-interests>"Create Repository" button.
+Copy the repository's connection string:
+https://github.com/fwee1996/sallys-interests.git
+   -->
+
+
+<!-- Book 2 - Martin's Aquarium-Column 1 Chapter 2-Sally's Interests with Flex/HTML Components
+    HTML elements in a webpage:
+Header->Logo
+      ->Nav->Products Page
+            ->Shops Page
+             ->Contact
+            ->Review
+Main ->Article ->Section "description use 1 of product"
+                ->Section "description use 2 of product"
+                ->Aside "client recommendation"
+                ->Aside "journalist evaluation"
+Footer->Nav-"jobs" , "contact"," legal"
+      ->Nav "Follow us" 
+      ->logo copyright
+ 
+ *********************************************************************************
+ 
+ -----sally's interest index.html
+run serve in vs terminal, copy url   -->
+
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Sally's Interests</title>
+</head>
+<body>
+    <main>
+        <!-- Parent biography component -->
+        <article class="bio">
+    
+            <!-- Child biography component -->
+            <section class="bio__name">
+                <h1>Sally Forthwright</h1>
+            </section>
+    
+            <!-- Child biography component -->
+            <section class="bio__address">
+                100 Infinity Way, Nashville
+            </section>
+    
+            <!-- Child biography component -->
+            <section class="bio__interests">
+                <div class="interest">
+                    Oyster harvesting
+                </div>
+                <div class="interest">
+                    Juggling
+                </div>
+                <div class="interest">
+                    Triathlons
+                </div>
+            </section>
+    
+        </article>
+    </main>
+</body>
+</html>
