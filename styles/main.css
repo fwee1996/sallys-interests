@@ -1,0 +1,45 @@
+/* Book2-ch2-webpage layout and Flex*/
+
+
+/*style the same all HTML component with class interest*/
+.interest {
+    border: 1px dotted crimson;
+    padding: 1em;
+    margin: 0.5em;
+}
+
+/*style <section class="bio__interests"> component
+with all interests in boxes in one row*/
+.bio__interests {
+    display: flex;  /* display: flex on parent component: Display the child items in a Flex layout in one row*/
+}
+
+/*but one row will run out of the screen so:*/
+.bio__interests {
+    display: flex;
+    flex-wrap: wrap;  /* Let the rows wrap if there are too many */
+}
+
+/*align rows of boxes to be centered and aligned with each other*/
+.bio__interests {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Evenly space the child elements */
+}
+
+/*boxes are not same size because some words are short so:*/
+.interest {
+    flex-basis: 16%;  /* Make each child element the same width */
+    border: 1px dotted crimson;
+    padding: 1em;
+    margin: 0.5em;
+}
+
+/*align text to be centered in the boxes*/
+.interest {
+    flex-basis: 16%;
+    border: 1px dotted crimson;
+    padding: 1em;
+    margin: 0.5em;
+    text-align: center; /* Center align the text in the boxes */
+}
